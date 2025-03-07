@@ -1,12 +1,12 @@
 project "ImGui"
 	kind "StaticLib"
 	language "C++"
-    staticruntime "off"
+	staticruntime "off"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("../../../Binaries/" .. OutputDir .. "/%{prj.name}")
+	objdir ("../../../Binaries/Intermediates/" .. OutputDir .. "/%{prj.name}")
 
-	files
+    files
 	{
 		"imconfig.h",
 		"imgui.h",
@@ -42,3 +42,4 @@ project "ImGui"
 		runtime "Release"
 		optimize "on"
         symbols "off"
+	
