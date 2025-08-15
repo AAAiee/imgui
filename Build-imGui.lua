@@ -7,13 +7,14 @@ project "ImGui"
 	targetdir ("../../../Binaries/" .. OutputDir .. "/%{prj.name}")
 	objdir ("../../../Binaries/Intermediates/" .. OutputDir .. "/%{prj.name}")
 
-
-	includedirs{
+	includedirs
+	{
 		".",
 		"../glfw/include"
 	}
 
-	links{
+	links
+	{
 		"GLFW",
 		"opengl32.lib"
 	}
@@ -36,10 +37,6 @@ project "ImGui"
 	}
 
 	filter "system:windows"
-		systemversion "latest"
-
-	filter "system:linux"
-		pic "On"
 		systemversion "latest"
 
 	filter "configurations:Debug"
