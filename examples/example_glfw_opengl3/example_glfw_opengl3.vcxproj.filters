@@ -48,10 +48,10 @@
     <ClInclude Include="..\..\backends\imgui_impl_glfw.h">
       <Filter>sources</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\backends\imgui_impl_opengl3.h">
+    <ClInclude Include="..\..\backends\imgui_impl_opengl3_loader.h">
       <Filter>sources</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\backends\imgui_impl_opengl3_loader.h">
+    <ClInclude Include="..\..\backends\imgui_impl_opengl3.h">
       <Filter>sources</Filter>
     </ClInclude>
   </ItemGroup>
